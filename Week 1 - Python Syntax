@@ -78,4 +78,29 @@ Complex numbers
 Strings 
 -	A sequence of Unicode characters e.g., a word or a sentence that can be manipulated.
 
+Day 4 - Operators
 
+Arithmetic Operators:
+
++, -, *, /, % (Modulus), ** (Exponentiation), // (Floor Division).
+Comparison Operators:
+
+== (Equal), != (Not Equal), < (Less Than), > (Greater Than), <= (Less Than or Equal To), >= (Greater Than or Equal To).
+Logical Operators:
+
+and (Logical AND), or (Logical OR), not (Logical NOT).
+Assignment Operators:
+
+=, +=, -=, *=, /=, %=, **=, //=.
+Bitwise Operators:
+
+& (Bitwise AND), | (Bitwise OR), ^ (Bitwise XOR), ~ (Bitwise NOT), << (Left Shift), >> (Right Shift).
+Identity Operators:
+
+is (True if both operands are the same object), is not (True if operands are different objects).
+Membership Operators:
+
+in (True if a value is found in the sequence), not in (True if a value is not found in the sequence).
+Ternary Operator (Conditional Expression):
+
+x if condition else y: Returns x if the condition is True; otherwise, it returns y.
