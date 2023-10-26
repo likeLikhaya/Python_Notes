@@ -14,13 +14,10 @@ Comments can be employed for various purposes, making them a fundamental compone
 Comment Syntax in Python:
 In Python, comments are initiated with the hash character, which is denoted by '#'. The comment extends from the '#' symbol to the end of the physical line. A comment can appear at the beginning of a line, following whitespace, or after code. However, it cannot be placed within a string literal. If the '#' character is within a string, it is treated as part of the string and not as a comment. Since comments exist solely for code clarification and are not interpreted by Python, they can be omitted when providing code examples.
 
-
-
-Example of Commenting in Python:
- 
-
-Conclusion:
-Comments are a vital aspect of programming that go beyond just being notes within the code. They facilitate collaboration, code understanding, and integration with development tools. In Python, they are simple to use, making the code more transparent and maintainable for both individual developers and teams. By incorporating comments effectively, you can create code that is not only functional but also comprehensible and well-documented.
+- Comments are a vital aspect of programming that go beyond just being notes within the code. 
+- They facilitate collaboration, code understanding, and integration with development tools. 
+- In Python, they are simple to use, making the code more transparent and maintainable for both individual developers and teams. 
+- By incorporating comments effectively, you can create code that is not only functional but also comprehensible and well-documented.
 
  
 Day 2 - Python Variables: Understanding and Usage
