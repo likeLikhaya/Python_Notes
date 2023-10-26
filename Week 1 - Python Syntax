@@ -1,0 +1,84 @@
+Day 1 - Intro to python.
+Understanding Comments in Programming
+In the world of programming, comments are an essential and versatile tool for developers. They serve to insert human-readable text into the source code of a program. While these comments are not processed by the compiler or interpreter, they are invaluable for programmers. Their primary purpose is to make the source code more comprehensible, facilitating collaboration and code maintenance.
+
+The Purpose of Comments:
+Comments can be employed for various purposes, making them a fundamental component of any codebase. Here are a few common use cases:
+
+1. Documentation: One of the most crucial roles of comments is in generating external documentation. They provide context, explanations, and usage examples, making it easier for other developers (or even your future self) to understand how the code works.
+
+2. Integration with Tools: Comments can be integrated into source code management systems and other external programming tools. These tools can extract and utilize comments to help in version control, code reviews, and automated testing.
+
+3. Debugging and Troubleshooting: Comments can be used to temporarily disable or debug code segments, aiding in the identification and resolution of issues.
+
+Comment Syntax in Python:
+In Python, comments are initiated with the hash character, which is denoted by '#'. The comment extends from the '#' symbol to the end of the physical line. A comment can appear at the beginning of a line, following whitespace, or after code. However, it cannot be placed within a string literal. If the '#' character is within a string, it is treated as part of the string and not as a comment. Since comments exist solely for code clarification and are not interpreted by Python, they can be omitted when providing code examples.
+
+
+
+Example of Commenting in Python:
+ 
+
+Conclusion:
+Comments are a vital aspect of programming that go beyond just being notes within the code. They facilitate collaboration, code understanding, and integration with development tools. In Python, they are simple to use, making the code more transparent and maintainable for both individual developers and teams. By incorporating comments effectively, you can create code that is not only functional but also comprehensible and well-documented.
+
+ 
+Day 2 - Python Variables: Understanding and Usage
+
+Introduction:
+-	Variables are fundamental elements in Python and other programming languages. 
+-	They serve as named containers for storing data that can be accessed and manipulated. 
+-	In Python, variables are dynamic, meaning they can hold different types of data. 
+
+Creating Variables:
+-	In Python, you can create a variable by assigning a value to a name. The variable's name should adhere to certain naming rules:
+-	It can contain letters (both uppercase and lowercase), numbers, and underscores (_).
+-	The name must start with a letter or an underscore but not with a number.
+-	Variable names are case-sensitive.
+
+Here is an example below:
+  
+
+Data Types and Dynamic Typing:
+-	Python is dynamically typed, which means the data type of a variable is determined automatically based on the assigned value. 
+-	Variables can hold various data types, including integers, floats, strings, and more.
+
+
+Here is an example below:
+ 
+Variable Reassignment:
+-	Variables can be reassigned with values of different data types at any time.
+
+Here is an example below:
+
+ 
+Multiple Assignment:
+-	Python allows you to assign values to multiple variables in a single line.
+
+Here is an example below:
+ 
+ 
+Variable Scope:
+-	Variables have a scope that defines where they are accessible. 
+-	Local variables are confined to a specific block or function, while global variables can be accessed from anywhere in the program.
+
+Here is an example below:
+ 
+-	Variables are a fundamental concept in Python, serving as containers for data. 
+-	They are dynamically typed and can hold various data types. 
+-	Understanding variable assignment, data types, reassignment, and scope is essential for writing Python programs effectively.
+ 
+Day 3 – Data Types
+Integers 
+-	These represent numbers in an unlimited range. 
+-	This is only limited by a machine’s memory.
+Booleans 
+-	Evaluate to ‘True or False’, 1 or 0 respectively.
+Floating point numbers 
+-	Floating-point numbers represent double-precision numbers.
+Complex numbers
+-	Complex numbers represent numbers as a pair of double-precision numbers.
+Strings 
+-	A sequence of Unicode characters e.g., a word or a sentence that can be manipulated.
+
+
