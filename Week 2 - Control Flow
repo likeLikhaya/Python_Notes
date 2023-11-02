@@ -1,0 +1,82 @@
+Day 1 – Control Flow:
+Control flow statements in Python determine the order in which a program's instructions are executed. They allow you to make decisions, create loops, and control the flow of your program.
+
+Program Control Flow:
+-	Program control flow is the order in which a program's code executes.
+-	Python's control flow is regulated by conditional statements, loops, and functions.
+Python has three types of control structures:
+-	Sequential (default mode)
+-	Selection (used for decisions and branching)
+-	Repetition (used for looping, e.g., repeating a piece of code multiple times)
+Control Flow Statements:
+Python provides several control flow statements, including:
+
+Conditional Statements (if, elif, else):
+-	The if statement allows you to execute a block of code if a specified condition is true.
+-	The elif (short for "else if") statement is used to check additional conditions if the initial if condition is false.
+-	The else statement provides a block of code to execute when the if and elif conditions are false.
+Loops (for and while):
+-	The for loop iterates over a sequence (e.g., a list, tuple, string) or a range of values and executes a block of code for each element in the sequence.
+-	The while loop repeats a block of code if a specified condition is true.
+Control Statements (break and continue):
+-	The break statement terminates the current loop prematurely and continues with the next code outside the loop.
+-	The continue statement skips the current iteration of a loop and moves on to the next iteration.
+
+Day 2 – Python Functions
+Function:
+-	To define a function, you use the def keyword, followed by the function name, a set of parentheses, and a colon.
+-	The function's code block is indented beneath the definition. You can also include parameters in the parentheses if your function requires input values.
+Function Invocation:
+-	To execute a function, you simply call it by its name followed by parentheses. 
+-	If the function has parameters, you provide the required values within the parentheses.
+Return Statement:
+-	Functions can return values using the return statement. 
+-	This allows a function to produce a result that can be used in other parts of your code.
+Docstrings:
+-	It's good practice to include a docstring (a multi-line string enclosed in triple-quotes) at the beginning of your function to provide a description of what the function does. 
+-	This helps document your code and makes it easier for others (and yourself) to understand the function's purpose.
+ 
+Day 3: Modules
+-	Modules in Python are a fundamental concept that allows you to organize and reuse code. 
+-	They help break down a program into smaller, manageable parts, promoting code reusability and organization.
+Module Definition:
+-	A module in Python is a file containing Python code, typically functions, classes, and variables, that can be imported and used in other Python scripts.
+Usage:
+-	You can use modules to structure your code logically and make it more maintainable. 
+-	Python's standard library is a collection of modules that provide a wide range of functionality, from file manipulation to web development, mathematics, and more.
+Creating Modules:
+-	To create your own module, you can write a Python script and save it with a .py file extension. 
+-	This file can contain functions, classes, and variables that you want to reuse in other parts of your program.
+Importing Modules:
+-	To use a module in your Python script, you import it using the import statement.
+-	For example: import mymodule (Import a module named "mymodule")
+Accessing Module Members:
+-	Once a module is imported, you can access its functions, classes, and variables using dot notation.
+-	For example, if mymodule has a function named my_function, you can call it like this: mymodule.my_function()
+Aliasing:
+-	You can alias a module or its members to give them shorter or more
+
+Day 4 – Regular Expressions
+Regular Expressions:
+-	Python has a built-in module used for regular expressions called re 
+-	We import the module like this: ‘import re’
+-	Through the re module, we get a set of functions that allow us to search a string for a match like 
+Findall function:
+-	re.findall() finds all the matches and returns them as a list of string, with each string representing one match 
+
+Search function:
+-	re.search() searches the string for a match and returns a match object if there is one, it only returns the 1st occurrence.
+
+Split function:
+-	re.split() splits the string at each match and returns a list of the resulting substrings
+
+Sub function:
+-	re.sub() replaces matches with the specified text and returns the modified string. 
+
+Day 5 - Sprint
+
+
+
+
+
+
