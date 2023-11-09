@@ -1,0 +1,99 @@
+Week 3 – Data Structures:
+-	The keyword def is used to tell Python that you are defining a function.
+-	The parentheses are used to hold the information for example., the greet_user() function doesn’t need information, so the parentheses are empty.
+-	The definition ends in a colon e.g., greet_user():
+-	The indented lines that follow def greet_user(): make up the body of the function.
+-	To use this function, you need to call it, a function call tells Python to execute the code in the function.
+-	To call a function you write the function name and the necessary information inside the parentheses. E.g., greet_user()
+-	From this result it will just print out Hello!
+-	When calling the greet_user() function you can pass a name to it like ‘jesse’ within the parentheses
+ 
+Day 2 – Python Lists
+How to Create a List:
+-	A list is created by placing all the items (elements) inside square brackets [], separated by commas. 
+-	It can have any number of items and they may be of different types (integer, float, string, etc.).
+-	We can use the index operator [] to access an item in a list. 
+-	Indices start at 0. So, a list having 5 elements will have an index from 0 to 4. 
+-	Trying to access indexes other than these will raise an IndexError. 
+-	The index must be an integer; you can't use float or other types, as this will result in a TypeError. 
+-	Nested lists are accessed using nested indexing.
+Negative Indexing:
+-	Python allows negative indexing for its sequences. 
+-	The index of -1 refers to the last item, -2 to the second last item, and so on
+Slicing Lists:
+-	We can access a range of items in a list by using the slicing operator : (colon).
+Delete/Remove List Elements:
+-	We can delete one or more items from a list using the keyword del. 
+-	It can even delete the list entirely.
+
+-	We can use remove() method to remove the given item or pop() method to remove an item at the given index. 
+-	The pop() method removes and returns the last item if the index is not provided. This helps us implement lists as stacks (first in, last out data structure).
+ 
+Python List Methods:
+-	append() - Add an element to the end of the list.
+-	extend() - Add all elements of a list to another list.
+-	insert() - Insert an item at the defined index.
+-	remove() - Removes an item from the list.
+-	pop() - Removes and returns an element at the given index.
+-	clear() - Removes all items from the list.
+-	index() - Returns the index of the first matched item.
+-	count() - Returns the count of the number of items passed as an argument.
+-	sort() - Sort items in a list in ascending order.
+-	reverse() - Reverse the order of items in the list.
+-	copy() - Returns a shallow copy of the list.
+
+Day 3 - Errors and Exceptions:
+Raising Exceptions:
+-	You can use the raise statement to throw an exception if a condition occurs.
+-	The statement can be complemented with a custom exception.
+The Assertion Error Exception:
+-	Instead of waiting for a program to crash midway, you can also make an assertion in Python. You can assert that a certain condition is met. 
+-	If this condition turns out to be true, the program can continue. 
+-	If the condition turns out to be false, the program can throw an AssertionError exception.
+The try and except Block:
+-	The try and except block in Python are used to catch and handle exceptions. Python executes code following the try statement as a "normal" part of the program. 
+-	The code that follows the except statement is the program's response to any exceptions in the preceding try clause.
+User-Defined Exceptions:
+-	Python allows you to create your own exceptions by deriving classes from the standard built-in exceptions. 
+-	Here is an example related to RuntimeError. A class is created that is subclassed from RuntimeError. 
+-	This is useful when you need to display more specific information when an exception is caught.
+ 
+Day 4 – Classes:
+Classes and Objects in Python:
+-	Classes in Python provide a means of bundling data and functionality together. When you create a new class, you create a new type of object, allowing instances of that type to be created.
+-	Each class instance can have attributes attached to it to maintain its state, and methods (defined by its class) to modify its state.
+-	Python's class mechanism combines features from other programming languages with a minimal amount of new syntax and semantics. 
+-	Python classes support the standard features of Object-Oriented Programming (OOP). This includes class inheritance, method overriding, and the ability to call methods of base classes.
+-	In Python, classes can be created at runtime and modified further after creation, emphasizing the dynamic nature of the language.
+-	In terms of class members, Python defaults to public access (except for private variables), and all member functions are virtual. Methods explicitly take an object as the first argument.
+-	Classes themselves are objects in Python, which allows for importing and renaming. Built-in types can also serve as base classes for extension, and most built-in operators with special syntax (arithmetic operators, subscripting, etc.) can be redefined for class instances.
+
+Names and Objects:
+-	In Python, objects have individuality, and multiple names in multiple scopes can be bound to the same object. This behavior is called aliasing and can be ignored for immutable types like numbers, strings, and tuples.
+-	However, aliasing can influence the semantics of Python code when working with mutable objects like lists, dictionaries, and other types.
+-	Aliases effectively behave like pointers in some respects. For example, passing an object as an argument is efficient because only a pointer is passed, and if a function modifies an object passed as an argument, the caller will see the change. This eliminates the need for two different argument passing mechanisms.
+-	These notes provide an overview of classes, objects, and the dynamic nature of Python's class mechanism.
+-	They also touch on the concepts of aliasing and the behavior of objects about mutable and immutable types.
+ 
+
+Python's Scope Rules and Namespaces:
+
+-	A namespace is a mapping from names to objects. 
+-	Most namespaces are implemented as dictionaries, but this is usually not apparent to the programmer. 
+-	Examples of namespaces include built-in names (e.g., functions like `abs()` and built-in exception names), global names in a module, and local names within a function.
+-	Namespaces are isolated from each other, and there is no connection between names in different namespaces. 
+-	For instance, two different modules can define a function with the same name without causing conflicts.
+-	Users of the modules must prefix it with the module name.
+- Namespaces are created at different moments and have different lifetimes. The namespace containing built-in names is created when the Python interpreter starts and is never deleted. Module namespaces are created when the module definition is read and last until the interpreter quits. The top-level script has its own global namespace.
+- The local namespace for a function is created when the function is called and deleted when the function returns or raises an unhandled exception. Each recursive function call has its own local namespace.
+- Scopes are textual regions of a Python program where a namespace is directly accessible. At any time during execution, there are at least three nested scopes whose namespaces are directly accessible: the local scope (innermost), the scopes of enclosing functions, and the global scope of the current module (next-to-last).
+- If a name is declared `global`, all references and assignments go directly to the middle scope containing the module's global names. Variables found outside of the innermost scope are read-only, unless declared `nonlocal`.
+- Class definitions introduce another namespace within the local scope. The global scope of a function is the module's namespace, regardless of how or where the function is called.
+
+
+Variable Binding in Python:
+- Assignments in Python do not copy data; they bind names to objects. If no `global` statement is in effect, assignments always go into the innermost scope. Deletions remove the binding of a name from the namespace of the local scope.
+- The `global` statement is used to indicate that specific variables live in the global scope and should be rebound there. The `nonlocal` statement indicates that variables live in an enclosed scope and should be rebound there.
+
+Scopes and Namespaces Example:  
+The local assignment didn't change `scope_test`'s binding of `spam`, while the `nonlocal` and `global` assignments affected variable bindings in different scopes. The output reflects the different bindings in the global scope and local scopes.
